@@ -1,0 +1,7 @@
+{
+  "name": "evaluacionunidad3maximilianoquiroz",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

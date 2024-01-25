@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Registrar Valor del Viaje</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        <ion-label position="floating">Monto del Viaje (CLP)</ion-label>
+        <ion-input type="text" [(ngModel)]="montoViaje"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Montro Formateado</ion-label>
+        <ion-text>{{ montoViaje | currency }}</ion-text>
+      </ion-item>
+      <ion-button (click)="guardarValor()">Guardar</ion-button>
+    </ion-list>
+  </ion-content>
